@@ -11,6 +11,7 @@ Layers: The CNN consists of multiple layers that process the image. Each layer e
 Encoder-Decoder Structure:
 Encoder: This part of the network compresses the black-and-white image into a simpler, lower-dimensional representation.
 Decoder: This part then takes this simplified representation and tries to reconstruct it as a color image.
+
 3. Training the CNN
 The CNN learns by looking at many pairs of black-and-white and color images. It tries to predict the colors for the black-and-white images. During training, the network compares its colorized output with the actual color image and adjusts itself to improve accuracy.
 
@@ -19,6 +20,7 @@ Colors are often predicted in a color space that separates brightness from color
 
 L (Lightness): This comes from the original black-and-white image.
 A and B (Color Components): These are predicted by the CNN.
+
 5. Combining the Results
 The predicted color components (A and B) are combined with the lightness (L) from the black-and-white image to create a fully colorized image.
 
